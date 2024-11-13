@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-o&knj10arcy36irjwcio^x%h-dtxsaydqn2=_y^fan8i-^x)lh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['8000-beebeebethc-portfoliopr-q9q9yxt4f2n.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = [
+    '8000-beebeebethc-portfoliopr-q9q9yxt4f2n.ws.codeinstitute-ide.net',
+    '.herokuapp.com',
+    'https://to-do-list-tracker-app-bbb1e3fcdc79.herokuapp.com/'
+    ]
 
 
 # Application definition

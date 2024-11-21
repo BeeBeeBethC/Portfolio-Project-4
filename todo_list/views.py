@@ -1,6 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.views import generic
+from .models import custom_user
 
 # Create your views here.
-def todo(request):
-    return HttpResponse("I Am Working!")
+class todolist(generic.ListView):
+    model = custom_user

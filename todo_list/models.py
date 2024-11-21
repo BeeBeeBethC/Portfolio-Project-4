@@ -16,7 +16,7 @@ class custom_user(models.Model):
     firstname = models.CharField(max_length=30)
     lastname = models.CharField(max_length=30)
     email = models.EmailField(unique = True)
-    password = models.CharField(_('password'), max_length=128)
+    # password = models.CharField(_('password'), max_length=128)
     is_staff = models.BooleanField(default = False)
 
 

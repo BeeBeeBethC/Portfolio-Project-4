@@ -4,4 +4,5 @@ from .models import custom_user
 
 # Create your views here.
 class todolist(ListView):
-    model = custom_user
+    queryset = custom_user.objects.all()
+    template_name = "base.html"

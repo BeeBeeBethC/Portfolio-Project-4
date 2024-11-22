@@ -1,8 +1,8 @@
 from django.shortcuts import render
-from django.views.generic import ListView
+from django.views import View
 from .models import custom_user
 
 # Create your views here.
-class todolist(ListView):
-    queryset = custom_user.objects.all()
-    template_name = "base.html"
+class todolist(View):
+    def get(self, request):
+        return render(request, 'base.html')

@@ -11,7 +11,7 @@ from django.contrib.auth.models import User
 # todo model users can create a todo list, confirm if correct and makes a note of time created at.
 
 
-class custom_user(models.Model):
+class person(models.Model):
     username = models.CharField(max_length=50, unique = True)
     firstname = models.CharField(max_length=30)
     lastname = models.CharField(max_length=30)

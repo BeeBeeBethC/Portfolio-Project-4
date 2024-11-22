@@ -3,7 +3,7 @@ from .models import custom_user, ToDo
 
 class userForm(forms.ModelForm):
     class Meta:
-        model = custom_user
+        model = person
         fields = ['username', 'lastname', 'firstname', 'email', 'password']
 
 class todoForm(forms.ModelForm):
